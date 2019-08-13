@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Lightwood Limited</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="Lightwood Limited" content="Lightwood Limited">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <link rel="stylesheet" href="index.css">
+</head>
+<body class="index-body">
+<div id="app">
+
+        <div class="nav-pos">
+                <!--nav-->
+                <el-row :gutter="20">
+                        <el-col :span="16"><div class="grid-content bg-purple bg-size" @click="goIndex">Lightwood Limited</div></el-col>
+                        <el-col :span="8">
+                                <div class="grid-content bg-purple" >
+                                        <el-dropdown trigger="click" @command="handleClick" >
+                                                <el-button >
+                                                        Protocol<i class="el-icon-arrow-down el-icon--right"></i>
+                                                </el-button>
+                                                <el-dropdown-menu slot="dropdown">
+                                                        <el-dropdown-item command="a">Privacy Policy</el-dropdown-item>
+                                                        <el-dropdown-item command="b">Terms of Service</el-dropdown-item>
+                                                </el-dropdown-menu>
+                                        </el-dropdown>
+                                </div>
+                        </el-col>
+                </el-row>
+        </div>
+
+        <div class="nav-line"></div>
+        <div class="protocol1-content">
+                <h2 class="con-title">Terms of Service</h2>
+                <h3>1.	Introduction </h3>
+                <p>The Terms of Services (the “Terms”) is an binding agreement between you and Lightwood Limited (“we”, “us”) ,and set forth the terms and conditions regarding your install, usage of our application, websites and the related services (the ‘Services’). </p>
+                <p>Please read the Terms carefully. If you are under the age of 13, you may not use the Services without the consent of your parents or legal guardian. </p>
+                <p>By installing the application or use the Services, you accept and agree to be bound by the Terms, and comply with the terms and conditions set forth herein. If do not accept the Terms, you must not use the Services.  </p>
+                <h3>2. Updates to the Terms</h3>
+                <p>We may modify these Terms from time to time, and We will notify you of any material changes to these Terms. Your continued access or use of the Services after the modification deems as your acceptance to the modified Terms. </p>
+                <h3>3 Use License</h3>
+                <p>We hereby authorize you a non-exclusive right to install and use the any number of copies of the application on your mobile devices. You may not:</p>
+                <p>•	make unauthorized copies, modify, adapt, translate, reverse engineer, disassemble, decompile or create any derivative works of the Services or any content included therein, including any files, tables or documentation (or any portion thereof) or determine or attempt to determine any source code, algorithms, methods or techniques embodied by the Services or any derivative works thereof;</p>
+                <p>•	distribute, license, transfer, or sell, in whole or in part, any of the Services or any derivative works thereof</p>
+                <p>•	interfere with or attempt to interfere with the proper working of the Services, disrupt our website or any networks connected to the Services, or bypass any measures we may use to prevent or restrict access to the Services;</p>
+                <p>•	conduct activities aimed at accessing elements or functions of the Services whose use has not been authorized by us. </p>
+                <p>•	arrange, modify, translate, adapt, reproduce, index, copy and/or extract any information, software, product or other element or part of the Services by any means without our express prior permission;</p>
+                <p>•	modify, distort, block, abnormally burden, disrupt, slow down and/or hinder the normal functioning of all or part of the Services, or their accessibility to other Users, or the functioning of the partner networks of the Services, or attempt to do any of the above;</p>
+                <p>•	transmit or propagate any virus, Trojan, worm, bomb, corrupted file and/or similar destructive device or corrupted data within the framework of the Services, and/or organize, participate in or be involved in any way in an attack on our servers and/or the Services and/or those of its service providers and partners;</p>
+                <p>•	"bot", "hack", "mod", "trainer", or "crack", or otherwise attempt to circumvent any access control, copyright protection or license-enforcement mechanisms associated with or related to the Services,</p>
+                <h3>4. Third Party Services</h3>
+                <p>The services may contain links to third party sites, and we are not responsible for and we do not endorse, support or guarantee the lawfulness, accuracy or reliability of any content submitted to, transmitted or displayed by or linked by our services, including any other content provided by other users of our services or by our advertisers.</p>
+                <p>We also do not guarantee the quality, reliability or suitability of any third party services provided, made available, advertised or linked through our services, and we will bear no responsibility for your use of or relationship with any such third party services. If you access third party services through our services, you must comply with any terms and conditions applicable to those services.</p>
+                <h3>5. Our Intellectual Property Rights</h3>
+                <p>All intellectual property rights in or to our services and software (including any future updates, upgrades and new versions) will continue to belong to us and our licensors. Except as expressly provided in these Terms, you have no right to use our intellectual property rights.</p>
+                <h3>6. Indemnity</h3>
+                <p>You agree to defend, indemnify, and hold harmless Lightwood Limited, its parents, subsidiaries, and affiliates, and each of their respective officers, directors, employees, agents and advisors from any and all claims, liabilities, costs, and expenses, including, but not limited to, attorneys’ fees and expenses, arising out of a breach of your obligations, representation and warranties under these Terms.</p>
+                <h3>7. EXCLUSION OF WARRANTIES</h3>
+                <p>NOTHING IN THESE TERMS SHALL AFFECT ANY STATUTORY RIGHTS THAT YOU CANNOT CONTRACTUALLY AGREE TO ALTER OR WAIVE AND ARE LEGALLY ALWAYS ENTITLED TO AS A CONSUMER.</p>
+                <p>THE SERVICES ARE PROVIDED “AS IS” AND WE MAKE NO WARRANTY OR REPRESENTATION TO YOU WITH RESPECT TO THEM. IN PARTICULAR WE DO NOT REPRESENT OR WARRANT TO YOU THAT:</p>
+                <p>•	YOUR USE OF THE SERVICES WILL MEET YOUR REQUIREMENTS;</p>
+                <p>•	YOUR USE OF THE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM ERROR;</p>
+                <p>•	DEFECTS IN THE OPERATION OR FUNCTIONALITY OF ANY SOFTWARE PROVIDED TO YOU AS PART OF THE SERVICES WILL BE CORRECTED.</p>
+                <p>NO CONDITIONS, WARRANTIES OR OTHER TERMS (INCLUDING ANY IMPLIED TERMS AS TO SATISFACTORY QUALITY, FITNESS FOR PURPOSE OR CONFORMANCE WITH DESCRIPTION) APPLY TO THE SERVICES EXCEPT TO THE EXTENT THAT THEY ARE EXPRESSLY SET OUT IN THE TERMS. WE MAY CHANGE, SUSPEND, WITHDRAW OR RESTRICT THE AVAILABILITY OF ALL OR ANY PART OF OUR APPLICATION FOR BUSINESS AND OPERATIONAL REASONS AT ANY TIME WITHOUT NOTICE</p>
+                <h3>8. LIMITATION OF LIABILITY</h3>
+                <p>TO THE EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY INDIRECT, CONSEQUENTIAL, INCIDENTAL, SPECIAL OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT DAMAGES ARISING FROM YOUR USE OF THE SERVICE, ANY MATERIALS, OR ANY OTHER CONTENT THEREIN. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED IN THESE TERMS OF SERVICE, OUR LIABILITY TO YOU IN RESPECT OF ANY LOSS OR DAMAGE SUFFERED BY YOU AND ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OF SERVICE, WHETHER IN CONTRACT, TORT OR FOR BREACH OF STATUTORY DUTY OR IN ANY OTHER WAY SHALL NOT EXCEED $50.</p>
+                <p>9. GOVERNING LAW AND DISPUTE RESOLUTION</p>
+                <p>Except to the extent that: (i) any applicable additional terms incorporated into these Terms provide differently, or (ii) the applicable laws and regulations of your jurisdiction mandate otherwise (for instance, you may have statutory rights in your jurisdiction in relation to bringing or defending claims in a local court (including small claims court (or similar court)), these Terms and any dispute or claim arising out of or in connection with these Terms will be governed by the law of the Hong Kong Special Administrative Region.</p>
+                <p>Any dispute, controversy or claim (whether in contract, tort or otherwise) arising out of, relating to, or in connection with these Terms, including their existence, validity, interpretation, performance, breach or termination, will be referred to and finally resolved by arbitration administered by the Hong Kong International Arbitration Centre under the Hong Kong International Arbitration Centre Administered Arbitration rules in force when the Notice of Arbitration is submitted. The seat of the arbitration will be Hong Kong. There will be one arbitrator only. The arbitration proceedings will be conducted in English.</p>
+                <h3>10.Contact Us.</h3>
+                <p>If any questions about this Terms, you can contact us at <span class="con-email">lightwoodlimited@gmail.com</span></p>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <!--Contact Us-->
+        <div class="index-contact">
+                <p class="contact-title">Contact Us</p>
+                <div class="contact-con">
+                        <p>Address：Ocean Centre, Harbour City, 5 Canton Road, Tsim Sha Tsui, Kowloon,Hong Kong</p>
+                        <p>Mail：lightwoodlimited@163.com</p>
+                </div>
+
+        </div>
+
+</div>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</body>
+<script>
+        new Vue({
+                el: '#app',
+                data: function() {
+                        return { visible: false }
+                },
+                methods:{
+                        handleClick :function (command){
+                                switch(command){
+                                        case 'a':
+                                                //todo 跳转第一个协议
+                                                window.location.href =window.location.origin +  '/protocol1.html'
+                                                break;
+                                        case 'b':
+                                                //todo 跳转第二个协议
+                                                window.location.href =window.location.origin +  '/protocol2.html'
+                                                break;
+                                }
+                        },
+                        clickGo :function (){
+                                //todo 跳转第一个协议
+                                window.location.href =window.location.origin +  '/protocol1.html'
+                        },
+                        goIndex :function (){
+                                //todo 跳转第一个协议
+                                window.location.href =window.location.origin +  '/'
+                        },
+
+                }
+        });
+</script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</html>

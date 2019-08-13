@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Lightwood Limited</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="Lightwood Limited" content="Lightwood Limited">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <link rel="stylesheet" href="index.css">
+</head>
+<body class="index-body">
+<div id="app">
+
+        <div class="nav-pos">
+                <!--nav-->
+                <el-row :gutter="20">
+                        <el-col :span="16"><div class="grid-content bg-purple bg-size" @click="goIndex">Lightwood Limited</div></el-col>
+                        <el-col :span="8">
+                                <div class="grid-content bg-purple">
+                                        <el-dropdown trigger="click" @command="handleClick" >
+                                                <el-button >
+                                                        Protocol
+                                                        <!--<i class="el-icon-arrow-down el-icon&#45;&#45;right"></i>-->
+                                                </el-button>
+                                                <el-dropdown-menu slot="dropdown">
+                                                        <el-dropdown-item command="a">Privacy Policy</el-dropdown-item>
+                                                        <el-dropdown-item command="b">Terms of Service</el-dropdown-item>
+                                                </el-dropdown-menu>
+                                        </el-dropdown>
+                                </div>
+                        </el-col>
+                </el-row>
+        </div>
+
+        <div class="nav-line"></div>
+        <!--图片-->
+        <div class="block">
+                <el-image src="./4.jpg"></el-image>
+        </div>
+        <!--Who we are-->
+        <div class="index-who">
+                <p class="who-title">Who we are ？</p>
+                <p class="who-con">Founded in May 2019, Lightwood Limited is a start-up Internet company dedicated to providing outstanding and fun applications to users around the world. We are committed to maximizing the needs of our users, listening to the voices of our users, and hoping to create interesting applications that enrich their lives.</p>
+        </div>
+        <!--Contact Us-->
+        <div class="index-contact">
+                <p class="contact-title">Contact Us</p>
+                <div class="contact-con">
+                        <p>Address：Ocean Centre, Harbour City, 5 Canton Road, Tsim Sha Tsui, Kowloon,Hong Kong</p>
+                        <p>Mail：lightwoodlimited@163.com</p>
+                </div>
+
+        </div>
+
+</div>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <!-- import JavaScript -->
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</body>
+<script>
+        new Vue({
+                el: '#app',
+                data: function() {
+                        return { visible: false }
+                },
+                methods:{
+                        handleClick :function (command){
+                              switch(command){
+                                      case 'a':
+                                              //todo 跳转第一个协议
+                                              window.location.href =window.location.origin +  '/protocol1.html'
+                                              break;
+                                      case 'b':
+                                              //todo 跳转第二个协议
+                                              window.location.href =window.location.origin +  '/protocol2.html'
+                                              break;
+                              }
+                        },
+                        clickGo :function (){
+                                //todo 跳转第一个协议
+                                window.location.href =window.location.origin +  '/protocol1.html'
+                        },
+                        goIndex :function (){
+                                //todo 跳转第一个协议
+                                window.location.href =window.location.origin +  '/'
+                        },
+
+                }
+        });
+</script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</html>
